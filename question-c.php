@@ -85,19 +85,19 @@
                     </div>
 
                     <div class="question1">
-                        <p>Is that possible to add pointers to each other?</p>
-                        <input type="radio" name="q7" id="dot-1" value="0">Yes
-                        <input type="radio" name="q7" id="dot-2" value="1">No 
+                        <p>Which data structure is used to handle recursion in C?</p>
+                        <input type="radio" name="q7" id="dot-1" value="1">Stack
+                        <input type="radio" name="q7" id="dot-2" value="0">Queue
                     </div>
 
                     <div class="question1">
-                        <p>Do you know threads in Java?</p>
-                        <input type="radio" name="q8" id="dot-1" value="1">Yes
-                        <input type="radio" name="q8" id="dot-2" value="0">No 
+                        <p>If p is an integer pointer with a value 1000, then what will the value of p + 5 be?</p>
+                        <input type="radio" name="q8" id="dot-1" value="0">1005
+                        <input type="radio" name="q8" id="dot-2" value="1">1020
                     </div>
 
                     <div class="question1">
-                        <p>Is it possible to use Null pointers in C</p>
+                        <p>Is it possible to use Null pointers in C?</p>
                         <input type="radio" name="q9" id="dot-1" value="1">Yes
                         <input type="radio" name="q9" id="dot-2" value="0">No 
                     </div>

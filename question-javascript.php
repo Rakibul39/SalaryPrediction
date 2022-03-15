@@ -87,7 +87,7 @@
                     </div>
 
                     <div class="question1">
-                        <p>Do you know NEGATIVE_INFINITY in JavaScript</p>
+                        <p>Do you know NEGATIVE_INFINITY in JavaScript?</p>
                         <input type="radio" name="q7" id="dot-1" value="1">Yes
                         <input type="radio" name="q7" id="dot-2" value="0">No 
                     </div>

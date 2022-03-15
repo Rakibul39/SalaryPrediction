@@ -49,7 +49,7 @@
         <form class="container" action="" method="POST">
             <h3>C-Sharp</h3>
                 <div class="question1">
-                    <p>Is C# is a OOP language?</p>
+                    <p>Is C# is an OOP language?</p>
                     <input type="radio"  name="q1" id="dot-1" value="1" >Yes
                     <input type="radio" name="q1" id="dot-2" value="0">No
                 </div>
@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="question1">
-                    <p>Can a private virtual method can be overridden</p>
+                    <p>Can a private virtual method can be overridden?</p>
                     <input type="radio" name="q4" id="dot-1" value="0">Yes
                     <input type="radio" name="q4" id="dot-2" value="1">No 
                 </div>

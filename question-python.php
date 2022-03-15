@@ -76,9 +76,9 @@ echo $user_id;
                 </div>
 
                 <div class="question1">
-                    <p>Do you know python docker?</p>
-                    <input type="radio" name="q5" id="dot-1" value="1">Yes
-                    <input type="radio" name="q5" id="dot-2" value="0">No
+                    <p>Is tuple mutable?</p>
+                    <input type="radio" name="q5" id="dot-1" value="0">Yes
+                    <input type="radio" name="q5" id="dot-2" value="1">No
                 </div>
 
                 <div class="coloum2">
@@ -89,7 +89,7 @@ echo $user_id;
                     </div>
 
                     <div class="question1">
-                        <p>Do you know python machine learning?</p>
+                        <p>Do you know machine learning in python?</p>
                         <input type="radio" name="q7" id="dot-1" value="1">Yes
                         <input type="radio" name="q7" id="dot-2" value="0">No 
                     </div>

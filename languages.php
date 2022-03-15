@@ -18,7 +18,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 <style>
-    .container00{
+.container00{
     width: 1150px;
     height: 80vh;
     background:linear-gradient(132deg, rgba(94, 226, 243, 0.6),rgba(121, 94, 243, 0.6));

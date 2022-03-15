@@ -98,7 +98,7 @@
                     </div>
 
                     <div class="question1">
-                        <p>Do you have any certification in GoLang</p>
+                        <p>Do you have any certification in GoLang?</p>
                         <input type="radio" name="q9" id="dot-1" value="1">Yes
                         <input type="radio" name="q9" id="dot-2" value="0">No 
                     </div>
