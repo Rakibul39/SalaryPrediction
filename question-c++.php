@@ -48,64 +48,133 @@
 
         <form class="container" action="" method="POST">
             <h3>C++</h3>
-                <div class="question1">
-                    <p>Can we call C++ OOPs?</p>
-                    <input type="radio" name="q1" id="dot-1" value="1">Yes
-                    <input type="radio" name="q1" id="dot-2" value="0">No 
-                    
+            <div class="question1">
+                <?php
+                    $sql = "SELECT * FROM cplus_q WHERE Id=1";
+                    $res = mysqli_query($con,$sql);
+                    $qu = mysqli_fetch_array($res);
+                    $qu1 = $qu['questions'];
+
+                ?>
+                    <p><?php echo $qu1; ?></p>
+                    <input type="radio"  name="q1" id="dot-1" value="1" >Yes
+                    <input type="radio" name="q1" id="dot-2" value="0">No
                 </div>
 
                 <div class="question1">
-                    <p>Do you know about constructor?</p>
+                <?php
+                    $a = "SELECT * FROM cplus_q WHERE Id=2";
+                    $a1 = mysqli_query($con,$a);
+                    $res22 = mysqli_fetch_array($a1);
+                    $qu2 = $res22['questions'];
+
+                ?>
+                    <p><?php echo $qu2; ?></p>
                     <input type="radio" name="q2" id="dot-1" value="1">Yes
                     <input type="radio" name="q2" id="dot-2" value="0">No
                 </div>
 
                 <div class="question1">
-                    <p>Is it possible for a C++ program to be compiled without the main() function?</p>
+                <?php
+                    $b = "SELECT * FROM cplus_q WHERE Id=3";
+                    $b1 = mysqli_query($con,$b);
+                    $r2 = mysqli_fetch_array($b1);
+                    $qu3 = $r2['questions'];
+
+                ?>
+                    <p><?php echo $qu3; ?></p>
                     <input type="radio" name="q3" id="dot-1" value="1">Yes
                     <input type="radio" name="q3" id="dot-2" value="0">No 
                 </div>
 
                 <div class="question1">
-                    <p>Do you know Virtual Functions and Runtime Polymorphism in C++</p>
+                <?php
+                    $c = "SELECT * FROM cplus_q WHERE Id=4";
+                    $c1 = mysqli_query($con,$c);
+                    $r3 = mysqli_fetch_array($c1);
+                    $qu4 = $r3['questions'];
+
+                ?>
+                    <p><?php echo $qu4; ?></p>
                     <input type="radio" name="q4" id="dot-1" value="1">Yes
                     <input type="radio" name="q4" id="dot-2" value="0">No 
                 </div>
 
                 <div class="question1">
-                    <p> Can we provide one default constructor for our class?</p>
-                    <input type="radio" name="q5" id="dot-1" value="0">Yes
-                    <input type="radio" name="q5" id="dot-2" value="1">No
+                <?php
+                    $d = "SELECT * FROM cplus_q WHERE Id=5";
+                    $d1 = mysqli_query($con,$d);
+                    $r4 = mysqli_fetch_array($d1);
+                    $qu5 = $r4['questions'];
+
+                ?>
+                    <p><?php echo $qu5; ?></p>
+                    <input type="radio" name="q5" id="dot-1" value="1">Yes
+                    <input type="radio" name="q5" id="dot-2" value="0">No
                 </div>
 
                 <div class="coloum2">
                     <div class="question1">
-                        <p>Do you develop any project using C++?</p>
+                    <?php
+                    $e = "SELECT * FROM cplus_q WHERE Id=6";
+                    $e1 = mysqli_query($con,$e);
+                    $r6 = mysqli_fetch_array($e1);
+                    $qu6 = $r6['questions'];
+
+                ?>
+                    <p><?php echo $qu6; ?></p>
                         <input type="radio" name="q6" id="dot-1" value="1">Yes
-                        <input type="radio" name="q6" id="dot-2" value="0">No 
+                        <input type="radio" name="q6" id="dot-2" value="0">No
                     </div>
 
                     <div class="question1">
-                        <p>Can we use access specifiers to achieve data hiding in C++?</p>
+                    <?php
+                    $f = "SELECT * FROM cplus_q WHERE Id=7";
+                    $f1 = mysqli_query($con,$f);
+                    $r7 = mysqli_fetch_array($f1);
+                    $qu7 = $r7['questions'];
+
+                ?>
+                    <p><?php echo $qu7; ?></p>
                         <input type="radio" name="q7" id="dot-1" value="1">Yes
                         <input type="radio" name="q7" id="dot-2" value="0">No 
                     </div>
 
                     <div class="question1">
-                        <p>Can we overload a destructor?</p>
+                    <?php
+                    $g = "SELECT * FROM cplus_q WHERE Id=8";
+                    $g1 = mysqli_query($con,$g);
+                    $r8 = mysqli_fetch_array($g1);
+                    $qu8 = $r8['questions'];
+
+                ?>
+                    <p><?php echo $qu8; ?></p>
                         <input type="radio" name="q8" id="dot-1" value="1">Yes
                         <input type="radio" name="q8" id="dot-2" value="0">No 
                     </div>
 
                     <div class="question1">
-                        <p>Can we have a String primitive data type in C++?</p>
+                    <?php
+                    $h = "SELECT * FROM cplus_q WHERE Id=9";
+                    $h1 = mysqli_query($con,$h);
+                    $r9 = mysqli_fetch_array($h1);
+                    $qu9 = $r9['questions'];
+
+                ?>
+                    <p><?php echo $qu9; ?></p>
                         <input type="radio" name="q9" id="dot-1" value="0">Yes
                         <input type="radio" name="q9" id="dot-2" value="1">No 
                     </div>
 
                     <div class="question1">
-                        <p>Do you know about virtual function in C++?</p>
+                    <?php
+                    $i = "SELECT * FROM cplus_q WHERE Id=10";
+                    $i1 = mysqli_query($con,$i);
+                    $r10 = mysqli_fetch_array($i1);
+                    $qu10 = $r10['questions'];
+
+                ?>
+                    <p><?php echo $qu10; ?></p>
                         <input type="radio" name="q10" id="dot-1" value="1">Yes
                         <input type="radio" name="q10" id="dot-2" value="0">No 
                     </div>

@@ -16,25 +16,25 @@
 		
 		<div id="mySidenav" class="sidenav">
 		    <p class="logo"><span>S</span>-Predicto</p>
-	        <a href="#" class="icon-a"><i class="fa fa-dashboard icons"></i>   Dashboard</a>
+	        <a href="admin panel.php" class="icon-a"><i class="fa fa-dashboard icons"></i>   Dashboard</a>
 
 	        <div class="dropdown">
                 <a href="#"class="icon_a"><i class="fa fa-list icons"></i>   Questions</a>
                     <div class="dropdown-content">
-                        <a href="#">Java</a>
-                        <a href="#">Python</a>
-                        <a href="#">C</a>
-                        <a href="#">C++</a>
-                        <a href="#">C#</a>
-                        <a href="#">PHP</a>
-                        <a href="#">HTML</a>
-                        <a href="#">CSS</a>
-                        <a href="#">JavaScript</a>
-                        <a href="#">Swift</a>
-                        <a href="#">Kotlin</a>
-                        <a href="#">Ruby</a>
-                        <a href="#">GoLang</a>
-                        <a href="#">Dart</a>
+                        <a href="question-java.php">Java</a>
+                        <a href="python_question.php">Python</a>
+                        <a href="c_question.php">C</a>
+                        <a href="cplus_question.php">C++</a>
+                        <a href="csharp_question.php">C#</a>
+                        <a href="php_question.php">PHP</a>
+                        <a href="html_question.php">HTML</a>
+                        <a href="css_question.php">CSS</a>
+                        <a href="js_question.php">JavaScript</a>
+                        <a href="swift_question.php">Swift</a>
+                        <a href="kotlin_question.php">Kotlin</a>
+                        <a href="ruby_question.php">Ruby</a>
+                        <a href="go_question.php">GoLang</a>
+                        <a href="dart_question.php">Dart</a>
                     </div>
 	        </div>
 	            <a href="#"class="icon-a"><i class="fa fa-users icons"></i>   Users</a>

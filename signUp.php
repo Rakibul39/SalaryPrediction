@@ -55,9 +55,10 @@
                     //echo "Data Inserted";
                     //Create a Session Variable to Display Message
                     $_SESSION['add'] = "<div class='success'>User Added Successfully.</div>";
+                    
                     //Redirect Page to Manage Admin
-                    //header("location:".SITEURL.'index.php');
-                    echo"<script> window.open('index.php','_self')</script>";
+                    header("location:".SITEURL.'index.php');
+                    //echo"<script> window.open('index.php','_self')</script>";
             }
             else
             {

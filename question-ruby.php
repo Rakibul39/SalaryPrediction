@@ -49,62 +49,132 @@
         <form class="container" action="" method="POST">
             <h3>Ruby</h3>
                 <div class="question1">
-                    <p>Where is ruby design and develop?</p>
+                <?php
+                    $sql = "SELECT * FROM ruby_q WHERE Id=1";
+                    $res = mysqli_query($con,$sql);
+                    $qu = mysqli_fetch_array($res);
+                    $qu1 = $qu['questions'];
+
+                ?>
+                    <p><?php echo $qu1; ?></p>                    
                     <input type="radio"  name="q1" id="dot-1" value="1" >Japan
                     <input type="radio" name="q1" id="dot-2" value="0">China
                 </div>
 
                 <div class="question1">
-                    <p>Ruby is known as language of flexibity, is it true or false?</p>
+                <?php
+                    $a = "SELECT * FROM ruby_q WHERE Id=2";
+                    $a1 = mysqli_query($con,$a);
+                    $res22 = mysqli_fetch_array($a1);
+                    $qu2 = $res22['questions'];
+
+                ?>
+                    <p><?php echo $qu2; ?></p>                    
                     <input type="radio" name="q2" id="dot-1" value="1">True
                     <input type="radio" name="q2" id="dot-2" value="0">False
                 </div>
 
                 <div class="question1">
-                    <p>Is ruby capable of collecting garbages?</p>
+                <?php
+                    $b = "SELECT * FROM ruby_q WHERE Id=3";
+                    $b1 = mysqli_query($con,$b);
+                    $r2 = mysqli_fetch_array($b1);
+                    $qu3 = $r2['questions'];
+
+                ?>
+                    <p><?php echo $qu3; ?></p>                    
                     <input type="radio" name="q3" id="dot-1" value="1">Yes
                     <input type="radio" name="q3" id="dot-2" value="0">No 
                 </div>
 
                 <div class="question1">
-                    <p>Do you know about RubyGems?</p>
+                <?php
+                    $c = "SELECT * FROM ruby_q WHERE Id=4";
+                    $c1 = mysqli_query($con,$c);
+                    $r3 = mysqli_fetch_array($c1);
+                    $qu4 = $r3['questions'];
+
+                ?>
+                    <p><?php echo $qu4; ?></p>
                     <input type="radio" name="q4" id="dot-1" value="1">Yes
                     <input type="radio" name="q4" id="dot-2" value="0">No 
                 </div>
 
                 <div class="question1">
-                    <p>Is there any differences between nil and false?</p>
+                <?php
+                    $d = "SELECT * FROM ruby_q WHERE Id=5";
+                    $d1 = mysqli_query($con,$d);
+                    $r4 = mysqli_fetch_array($d1);
+                    $qu5 = $r4['questions'];
+
+                ?>
+                    <p><?php echo $qu5; ?></p>
                     <input type="radio" name="q5" id="dot-1" value="1">Yes
                     <input type="radio" name="q5" id="dot-2" value="0">No
                 </div>
 
                 <div class="coloum2">
                     <div class="question1">
-                        <p>Is Ruby support OOP?</p>
+                    <?php
+                    $e = "SELECT * FROM ruby_q WHERE Id=6";
+                    $e1 = mysqli_query($con,$e);
+                    $r6 = mysqli_fetch_array($e1);
+                    $qu6 = $r6['questions'];
+
+                ?>
+                    <p><?php echo $qu6; ?></p>
                         <input type="radio" name="q6" id="dot-1" value="1">Yes
                         <input type="radio" name="q6" id="dot-2" value="0">No
                     </div>
 
                     <div class="question1">
-                        <p>When $ is used in Ruby?</p>
+                    <?php
+                    $f = "SELECT * FROM ruby_q WHERE Id=7";
+                    $f1 = mysqli_query($con,$f);
+                    $r7 = mysqli_fetch_array($f1);
+                    $qu7 = $r7['questions'];
+
+                ?>
+                    <p><?php echo $qu7; ?></p>                       
                         <input type="radio" name="q7" id="dot-1" value="0">Local Variable
                         <input type="radio" name="q7" id="dot-2" value="1">Global Variable
                     </div>
 
                     <div class="question1">
-                        <p>In how many ways you can compare Ruby string?</p>
+                    <?php
+                    $g = "SELECT * FROM ruby_q WHERE Id=8";
+                    $g1 = mysqli_query($con,$g);
+                    $r8 = mysqli_fetch_array($g1);
+                    $qu8 = $r8['questions'];
+
+                ?>
+                    <p><?php echo $qu8; ?></p>                    
                         <input type="radio" name="q8" id="dot-1" value="0">2
                         <input type="radio" name="q8" id="dot-2" value="1">3 
                     </div>
 
                     <div class="question1">
-                        <p>Ruby was written in which language?</p>
+                    <?php
+                    $h = "SELECT * FROM ruby_q WHERE Id=9";
+                    $h1 = mysqli_query($con,$h);
+                    $r9 = mysqli_fetch_array($h1);
+                    $qu9 = $r9['questions'];
+
+                ?>
+                    <p><?php echo $qu9; ?></p>
                         <input type="radio" name="q9" id="dot-1" value="1">C
                         <input type="radio" name="q9" id="dot-2" value="0">Java 
                     </div>
 
                     <div class="question1">
-                        <p>Do you develop any project using Ruby?</p>
+                    <?php
+                    $i = "SELECT * FROM ruby_q WHERE Id=10";
+                    $i1 = mysqli_query($con,$i);
+                    $r10 = mysqli_fetch_array($i1);
+                    $qu10 = $r10['questions'];
+
+                ?>
+                    <p><?php echo $qu10; ?></p>>
                         <input type="radio" name="q10" id="dot-1" value="1">Yes
                         <input type="radio" name="q10" id="dot-2" value="0">No 
                     </div>

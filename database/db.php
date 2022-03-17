@@ -4,7 +4,7 @@
     session_start();
     
     //Create Constants to Store Non Repeating Values
-    define('SITEURL', 'http://localhost/website/');
+    define('SITEURL', 'http://localhost/SalaryPrediction/');
     define('LOCALHOST', 'localhost');
     define('DB_USERNAME', 'root');
     define('DB_PASSWORD', '');

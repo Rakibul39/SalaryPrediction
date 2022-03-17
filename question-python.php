@@ -28,7 +28,6 @@ $select_user = "SELECT * FROM user_info WHERE email = '$session_user'";
 $run_cust = mysqli_query($con,$select_user);
 $row_user = mysqli_fetch_array($run_cust);
 $user_id = $row_user['Id'];
-echo $user_id;
 ?>
 
     <div class="main2">
@@ -51,63 +50,133 @@ echo $user_id;
 
         <form class="container" action="" method="POST">
             <h3>Python</h3>
-                <div class="question1">
-                    <p>Do you have knowledge about data science in Python?</p>
-                    <input type="radio" name="q1" id="dot-1" value="1">Yes
-                    <input type="radio" name="q1" id="dot-2" value="0">No 
+            <div class="question1">
+                <?php
+                    $sql = "SELECT * FROM python_q WHERE Id=1";
+                    $res = mysqli_query($con,$sql);
+                    $qu = mysqli_fetch_array($res);
+                    $qu1 = $qu['questions'];
+
+                ?>
+                    <p><?php echo $qu1; ?></p>
+                    <input type="radio"  name="q1" id="dot-1" value="1" >Yes
+                    <input type="radio" name="q1" id="dot-2" value="0">No
                 </div>
 
                 <div class="question1">
-                    <p>Do you know about API in python?</p>
+                <?php
+                    $a = "SELECT * FROM python_q WHERE Id=2";
+                    $a1 = mysqli_query($con,$a);
+                    $res22 = mysqli_fetch_array($a1);
+                    $qu2 = $res22['questions'];
+
+                ?>
+                    <p><?php echo $qu2; ?></p>
                     <input type="radio" name="q2" id="dot-1" value="1">Yes
                     <input type="radio" name="q2" id="dot-2" value="0">No
                 </div>
 
                 <div class="question1">
-                    <p>Do you know django?</p>
+                <?php
+                    $b = "SELECT * FROM python_q WHERE Id=3";
+                    $b1 = mysqli_query($con,$b);
+                    $r2 = mysqli_fetch_array($b1);
+                    $qu3 = $r2['questions'];
+
+                ?>
+                    <p><?php echo $qu3; ?></p>
                     <input type="radio" name="q3" id="dot-1" value="1">Yes
                     <input type="radio" name="q3" id="dot-2" value="0">No 
                 </div>
 
                 <div class="question1">
-                    <p>Do you have any idea about python doker?</p>
+                <?php
+                    $c = "SELECT * FROM python_q WHERE Id=4";
+                    $c1 = mysqli_query($con,$c);
+                    $r3 = mysqli_fetch_array($c1);
+                    $qu4 = $r3['questions'];
+
+                ?>
+                    <p><?php echo $qu4; ?></p>
                     <input type="radio" name="q4" id="dot-1" value="1">Yes
                     <input type="radio" name="q4" id="dot-2" value="0">No 
                 </div>
 
                 <div class="question1">
-                    <p>Is tuple mutable?</p>
+                <?php
+                    $d = "SELECT * FROM python_q WHERE Id=5";
+                    $d1 = mysqli_query($con,$d);
+                    $r4 = mysqli_fetch_array($d1);
+                    $qu5 = $r4['questions'];
+
+                ?>
+                    <p><?php echo $qu5; ?></p>
                     <input type="radio" name="q5" id="dot-1" value="0">Yes
                     <input type="radio" name="q5" id="dot-2" value="1">No
                 </div>
 
                 <div class="coloum2">
                     <div class="question1">
-                        <p>Do you develop any project using python?</p>
+                    <?php
+                    $e = "SELECT * FROM python_q WHERE Id=6";
+                    $e1 = mysqli_query($con,$e);
+                    $r6 = mysqli_fetch_array($e1);
+                    $qu6 = $r6['questions'];
+
+                ?>
+                    <p><?php echo $qu6; ?></p>
                         <input type="radio" name="q6" id="dot-1" value="1">Yes
-                        <input type="radio" name="q6" id="dot-2" value="0">No 
+                        <input type="radio" name="q6" id="dot-2" value="0">No
                     </div>
 
                     <div class="question1">
-                        <p>Do you know machine learning in python?</p>
+                    <?php
+                    $f = "SELECT * FROM python_q WHERE Id=7";
+                    $f1 = mysqli_query($con,$f);
+                    $r7 = mysqli_fetch_array($f1);
+                    $qu7 = $r7['questions'];
+
+                ?>
+                    <p><?php echo $qu7; ?></p>
                         <input type="radio" name="q7" id="dot-1" value="1">Yes
                         <input type="radio" name="q7" id="dot-2" value="0">No 
                     </div>
 
                     <div class="question1">
-                        <p>Do you know flesk in Python?</p>
+                    <?php
+                    $g = "SELECT * FROM python_q WHERE Id=8";
+                    $g1 = mysqli_query($con,$g);
+                    $r8 = mysqli_fetch_array($g1);
+                    $qu8 = $r8['questions'];
+
+                ?>
+                    <p><?php echo $qu8; ?></p>
                         <input type="radio" name="q8" id="dot-1" value="1">Yes
                         <input type="radio" name="q8" id="dot-2" value="0">No 
                     </div>
 
                     <div class="question1">
-                        <p>Do you know python web scraping?</p>
+                    <?php
+                    $h = "SELECT * FROM python_q WHERE Id=9";
+                    $h1 = mysqli_query($con,$h);
+                    $r9 = mysqli_fetch_array($h1);
+                    $qu9 = $r9['questions'];
+
+                ?>
+                    <p><?php echo $qu9; ?></p>
                         <input type="radio" name="q9" id="dot-1" value="1">Yes
                         <input type="radio" name="q9" id="dot-2" value="0">No 
                     </div>
 
-                    <div class="question10">
-                        <p>Do you ever develop any project using machine learning?</p>
+                    <div class="question1">
+                    <?php
+                    $i = "SELECT * FROM python_q WHERE Id=10";
+                    $i1 = mysqli_query($con,$i);
+                    $r10 = mysqli_fetch_array($i1);
+                    $qu10 = $r10['questions'];
+
+                ?>
+                    <p><?php echo $qu10; ?></p>
                         <input type="radio" name="q10" id="dot-1" value="1">Yes
                         <input type="radio" name="q10" id="dot-2" value="0">No 
                     </div>

@@ -48,62 +48,132 @@
         <form class="container" action="" method="POST">
             <h3>C</h3>
                 <div class="question1">
-                    <p>Is C an OOP language or not?</p>
+                <?php
+                    $sql = "SELECT * FROM c_q WHERE Id=1";
+                    $res = mysqli_query($con,$sql);
+                    $qu = mysqli_fetch_array($res);
+                    $qu1 = $qu['question'];
+
+                ?>
+                    <p><?php echo $qu1; ?></p>
                     <input type="radio"  name="q1" id="dot-1" value="0" >Yes
                     <input type="radio" name="q1" id="dot-2" value="1">No
                 </div>
 
                 <div class="question1">
-                    <p>Can a C program be executed in the absence of a main() function?</p>
+                <?php
+                    $a = "SELECT * FROM c_q WHERE Id=2";
+                    $a1 = mysqli_query($con,$a);
+                    $res22 = mysqli_fetch_array($a1);
+                    $qu2 = $res22['question'];
+
+                ?>
+                    <p><?php echo $qu2; ?></p>
                     <input type="radio" name="q2" id="dot-1" value="0">Yes
                     <input type="radio" name="q2" id="dot-2" value="1">No
                 </div>
 
                 <div class="question1">
-                    <p>Is recursive function possible in C?</p>
+                <?php
+                    $b = "SELECT * FROM c_q WHERE Id=3";
+                    $b1 = mysqli_query($con,$b);
+                    $r2 = mysqli_fetch_array($b1);
+                    $qu3 = $r2['question'];
+
+                ?>
+                    <p><?php echo $qu3; ?></p>
                     <input type="radio" name="q3" id="dot-1" value="1">Yes
                     <input type="radio" name="q3" id="dot-2" value="0">No 
                 </div>
 
                 <div class="question1">
-                    <p> Is it possible to use curly brackets ({}) to enclose a single line code in C program?</p>
+                <?php
+                    $c = "SELECT * FROM c_q WHERE Id=4";
+                    $c1 = mysqli_query($con,$c);
+                    $r3 = mysqli_fetch_array($c1);
+                    $qu4 = $r3['question'];
+
+                ?>
+                    <p><?php echo $qu4; ?></p>                    
                     <input type="radio" name="q4" id="dot-1" value="1">Yes
                     <input type="radio" name="q4" id="dot-2" value="0">No 
                 </div>
 
                 <div class="question1">
-                    <p>Is that possible to store 32768 in an int data type variable?</p>
+                <?php
+                    $d = "SELECT * FROM c_q WHERE Id=5";
+                    $d1 = mysqli_query($con,$d);
+                    $r4 = mysqli_fetch_array($d1);
+                    $qu5 = $r4['question'];
+
+                ?>
+                    <p><?php echo $qu5; ?></p>                    
                     <input type="radio" name="q5" id="dot-1" value="0">Yes
                     <input type="radio" name="q5" id="dot-2" value="1">No
                 </div>
 
                 <div class="coloum2">
                     <div class="question1">
-                        <p>Is there any possibility to create a customized header file with C programming language?</p>
+                    <?php
+                    $e = "SELECT * FROM c_q WHERE Id=6";
+                    $e1 = mysqli_query($con,$e);
+                    $r6 = mysqli_fetch_array($e1);
+                    $qu6 = $r6['question'];
+
+                ?>                        
+                        <p><?php echo $qu6; ?></p>
                         <input type="radio" name="q6" id="dot-1" value="1">Yes
                         <input type="radio" name="q6" id="dot-2" value="0">No
                     </div>
 
                     <div class="question1">
-                        <p>Which data structure is used to handle recursion in C?</p>
+                    <?php
+                    $f = "SELECT * FROM c_q WHERE Id=7";
+                    $f1 = mysqli_query($con,$f);
+                    $r7 = mysqli_fetch_array($f1);
+                    $qu7 = $r7['question'];
+
+                    ?>
+                    <p><?php echo $qu7; ?></p>                        
                         <input type="radio" name="q7" id="dot-1" value="1">Stack
                         <input type="radio" name="q7" id="dot-2" value="0">Queue
                     </div>
 
                     <div class="question1">
-                        <p>If p is an integer pointer with a value 1000, then what will the value of p + 5 be?</p>
+                    <?php
+                    $g = "SELECT * FROM c_q WHERE Id=8";
+                    $g1 = mysqli_query($con,$g);
+                    $r8 = mysqli_fetch_array($g1);
+                    $qu8 = $r8['question'];
+
+                ?>
+                    <p><?php echo $qu8; ?></p>                        
                         <input type="radio" name="q8" id="dot-1" value="0">1005
                         <input type="radio" name="q8" id="dot-2" value="1">1020
                     </div>
 
                     <div class="question1">
-                        <p>Is it possible to use Null pointers in C?</p>
+                    <?php
+                    $h = "SELECT * FROM c_q WHERE Id=9";
+                    $h1 = mysqli_query($con,$h);
+                    $r9 = mysqli_fetch_array($h1);
+                    $qu9 = $r9['question'];
+
+                ?>
+                    <p><?php echo $qu9; ?></p>                        
                         <input type="radio" name="q9" id="dot-1" value="1">Yes
                         <input type="radio" name="q9" id="dot-2" value="0">No 
                     </div>
 
                     <div class="question1">
-                        <p>Do you ever develop a project using C?</p>
+                    <?php
+                    $i = "SELECT * FROM c_q WHERE Id=10";
+                    $i1 = mysqli_query($con,$i);
+                    $r10 = mysqli_fetch_array($i1);
+                    $qu10 = $r10['question'];
+
+                ?>
+                    <p><?php echo $qu10; ?></p>                     
                         <input type="radio" name="q10" id="dot-1" value="1">Yes
                         <input type="radio" name="q10" id="dot-2" value="0">No 
                     </div>

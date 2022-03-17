@@ -113,6 +113,7 @@ body {
 
             //Redirect to HOme Page/Dashboard
             //echo"<script>alert('login successfull')</script>";
+            
             echo"<script> window.open('index.php','_self')</script>";
         }
         else

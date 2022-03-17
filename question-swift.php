@@ -48,63 +48,133 @@
 
         <form class="container" action="" method="POST">
             <h3>Swift</h3>
-                <div class="question1">
-                    <p>Is Swift an object-oriented programming language?</p>
+            <div class="question1">
+                <?php
+                    $sql = "SELECT * FROM swift_q WHERE Id=1";
+                    $res = mysqli_query($con,$sql);
+                    $qu = mysqli_fetch_array($res);
+                    $qu1 = $qu['questions'];
+
+                ?>
+                    <p><?php echo $qu1; ?></p>
                     <input type="radio"  name="q1" id="dot-1" value="1" >Yes
                     <input type="radio" name="q1" id="dot-2" value="0">No
                 </div>
 
                 <div class="question1">
-                    <p>Is it possible to develop iPhone apps using Swift?</p>
+                <?php
+                    $a = "SELECT * FROM swift_q WHERE Id=2";
+                    $a1 = mysqli_query($con,$a);
+                    $res22 = mysqli_fetch_array($a1);
+                    $qu2 = $res22['questions'];
+
+                ?>
+                    <p><?php echo $qu2; ?></p>
                     <input type="radio" name="q2" id="dot-1" value="1">Yes
                     <input type="radio" name="q2" id="dot-2" value="0">No
                 </div>
 
                 <div class="question1">
-                    <p>Are you familiar with generic in Swift?</p>
+                <?php
+                    $b = "SELECT * FROM swift_q WHERE Id=3";
+                    $b1 = mysqli_query($con,$b);
+                    $r2 = mysqli_fetch_array($b1);
+                    $qu3 = $r2['questions'];
+
+                ?>
+                    <p><?php echo $qu3; ?></p>
                     <input type="radio" name="q3" id="dot-1" value="1">Yes
-                    <input type="radio" name="q3" id="dot-2" value="0">No
+                    <input type="radio" name="q3" id="dot-2" value="0">No 
                 </div>
 
                 <div class="question1">
-                    <p>Do you know about mutating in Swift?</p>
+                <?php
+                    $c = "SELECT * FROM swift_q WHERE Id=4";
+                    $c1 = mysqli_query($con,$c);
+                    $r3 = mysqli_fetch_array($c1);
+                    $qu4 = $r3['questions'];
+
+                ?>
+                    <p><?php echo $qu4; ?></p>
                     <input type="radio" name="q4" id="dot-1" value="1">Yes
                     <input type="radio" name="q4" id="dot-2" value="0">No 
                 </div>
 
                 <div class="question1">
-                    <p>Which JSON framework is supported by iOS?</p>
+                <?php
+                    $d = "SELECT * FROM swift_q WHERE Id=5";
+                    $d1 = mysqli_query($con,$d);
+                    $r4 = mysqli_fetch_array($d1);
+                    $qu5 = $r4['questions'];
+
+                ?>
+                    <p><?php echo $qu5; ?></p>
                     <input type="radio" name="q5" id="dot-1" value="1">Json Swift
                     <input type="radio" name="q5" id="dot-2" value="0">SBJson
                 </div>
 
                 <div class="coloum2">
                     <div class="question1">
-                        <p>Do you know about PLIST in iOS?</p>
+                    <?php
+                    $e = "SELECT * FROM swift_q WHERE Id=6";
+                    $e1 = mysqli_query($con,$e);
+                    $r6 = mysqli_fetch_array($e1);
+                    $qu6 = $r6['questions'];
+
+                ?>
+                    <p><?php echo $qu6; ?></p>
                         <input type="radio" name="q6" id="dot-1" value="1">Yes
                         <input type="radio" name="q6" id="dot-2" value="0">No
                     </div>
 
                     <div class="question1">
-                        <p>Do you know how to create Tuple in Swift?</p>
+                    <?php
+                    $f = "SELECT * FROM swift_q WHERE Id=7";
+                    $f1 = mysqli_query($con,$f);
+                    $r7 = mysqli_fetch_array($f1);
+                    $qu7 = $r7['questions'];
+
+                ?>
+                    <p><?php echo $qu7; ?></p>
                         <input type="radio" name="q7" id="dot-1" value="1">Yes
                         <input type="radio" name="q7" id="dot-2" value="0">No 
                     </div>
 
                     <div class="question1">
-                        <p>Where can we test the apple iPhone apps if we do not have an iOS device?</p>
+                    <?php
+                    $g = "SELECT * FROM swift_q WHERE Id=8";
+                    $g1 = mysqli_query($con,$g);
+                    $r8 = mysqli_fetch_array($g1);
+                    $qu8 = $r8['questions'];
+
+                ?>
+                    <p><?php echo $qu8; ?></p>
                         <input type="radio" name="q8" id="dot-1" value="0">Virtual Box
                         <input type="radio" name="q8" id="dot-2" value="1">Simulator 
                     </div>
 
                     <div class="question1">
-                        <p>Is Swift programming language open-source or not?</p>
+                    <?php
+                    $h = "SELECT * FROM swift_q WHERE Id=9";
+                    $h1 = mysqli_query($con,$h);
+                    $r9 = mysqli_fetch_array($h1);
+                    $qu9 = $r9['questions'];
+
+                ?>
+                    <p><?php echo $qu9; ?></p>
                         <input type="radio" name="q9" id="dot-1" value="1">Yes
                         <input type="radio" name="q9" id="dot-2" value="0">No 
                     </div>
 
                     <div class="question1">
-                        <p>Do you ever develop any project using Swift?</p>
+                    <?php
+                    $i = "SELECT * FROM swift_q WHERE Id=10";
+                    $i1 = mysqli_query($con,$i);
+                    $r10 = mysqli_fetch_array($i1);
+                    $qu10 = $r10['questions'];
+
+                ?>
+                    <p><?php echo $qu10; ?></p>
                         <input type="radio" name="q10" id="dot-1" value="1">Yes
                         <input type="radio" name="q10" id="dot-2" value="0">No 
                     </div>
