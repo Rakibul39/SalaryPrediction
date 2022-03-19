@@ -29,13 +29,9 @@
                 <ul>
                     <li><a href="index.php">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a>
-                        <ul class="drop">
-                            <li><a href="#">Salary Prediction</a></li>
-                            <li><a href="#">Knowledge in Languages</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="SalaryPrediction.php">DESIGN</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="SalaryPrediction.php">DirectPredict</a></li>
+                    <li><a href="job_offer.php">Job_Offer</a></li>
                     <li><a href="#">CONTACT</a></li>
                     
                     <li>

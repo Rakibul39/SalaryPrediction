@@ -157,10 +157,7 @@
                     <li><a href="index.php">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">SERVICE</a>
-                        <ul class="drop">
-                            <li><a href="#">Salary Prediction</a></li>
-                            <li><a href="#">Knowledge in Languages</a></li>
-                        </ul>
+                        
                     </li>
                     <li><a href="#">DESIGN</a></li>
                     <li><a href="#">CONTACT</a></li>

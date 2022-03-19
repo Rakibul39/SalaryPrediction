@@ -38,8 +38,15 @@
                     </div>
 	        </div>
 	            <a href="#"class="icon-a"><i class="fa fa-users icons"></i>   Users</a>
-	            <a href="#"class="icon-a"><i class="fa fa-user icons"></i>   Acount</a>
 
+				<div class="dropdown">
+					<a href="#"class="icon-a"><i class="fa fa-user icons"></i>   Job Offer</a>
+					<div class="dropdown-content">
+						<a href="post_job.php">Post Job</a>
+						<a href="#">Job Edit</a>
+						<a href="#">Job Delete</a>
+					</div>
+				</div>
 	    </div>
 	        <div id="main">
 

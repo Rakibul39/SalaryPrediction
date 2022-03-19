@@ -1,5 +1,35 @@
 <?php include('includes/header.php'); ?>
-            
+     <style>
+         .navbar{
+    width: 100%;
+    margin: auto;
+    height: 75px;
+    background: linear-gradient(to top, rgba(64, 68, 64, 0.8),rgba(126, 122, 126, 0.6));
+    
+    
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #00ccff;
+    border: 2px solid #00ccff;
+    margin-top: 13px;
+    margin-left: 300px;
+    color: #fff;
+    font-size: 18px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.menu{
+    width: 1000px;
+    float: left;
+    height: 70px;
+    margin-left:100px;
+}
+     </style>       
 
             
 

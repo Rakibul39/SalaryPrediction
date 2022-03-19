@@ -15,7 +15,7 @@
 }
 
 .navbar{
-    width: 1200px;
+    width: 100%;
     margin: auto;
     height: 75px;
     background: linear-gradient(to top, rgba(64, 68, 64, 0.8),rgba(126, 122, 126, 0.6));
@@ -39,7 +39,7 @@
 }
 
 .menu{
-    width: 400px;
+    width: 1000px;
     float: left;
     height: 70px;
 }
