@@ -9,9 +9,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-<style>
+<style>    
     .login-form {
-        margin: 50px auto;
+        margin: 20px auto;
         font-size: 15px;
     }
 
@@ -55,8 +55,148 @@
     .w-25 {
         width: 40% !important;
     }
-</style>
+    .icon2{
+    width: 200px;
+    float: left;
+    height: 80px;
+}
 
+.logo2{
+    color: #00ccff;
+    font-size: 35px;
+    font-family: Arial;
+    font-weigth:20px;
+    padding-left: 20px;
+    float: left;
+    padding-top: 0px;
+    margin-top: 5px
+}
+
+ul{
+    margin-left: 15px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 27px;
+    font-size: 14px;
+    position: relative;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    transition: 0.4s ease-in-out;
+    border:none;
+}
+
+ul li a:hover{
+    text-decoration: none;
+    color: #00ccff;
+}
+
+ul li ul{
+    display: block;
+    position: absolute;
+    /*background-color: #a2e969d8;
+    background: linear-gradient(to top, rgba(85, 32, 230, 0.932)50%,rgba(255,255,255,0.6)50%);*/
+}
+
+ul li ul li{
+    display: none;
+}
+
+/*ul li ul li a{
+    justify-content: left;
+    align-items: left;
+    padding: 0px;
+
+}*/
+
+ul li:hover ul li{
+    display: block;
+}
+.navbar{
+width: 100%;
+height: 70px;
+background: linear-gradient(to top, rgba(64, 68, 64, 0.8),rgba(64, 68, 64, 0.6));
+
+
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.546), url(1.png));
+    background-position: center;
+    background-size: cover;
+ 
+}
+.menu{
+width: 1200px;
+float: left;
+height: 70px;
+position: relative;
+top:-15px;
+}
+
+.btn4 {
+  padding: 0.6rem 1.3rem;
+  background-color: #fff;
+  border: 2px solid #fafafa;
+  font-size: 0.95rem;
+  color: #1abc9c;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 380px;;
+}
+
+.btn4:hover {
+  background-color: transparent;
+  color: #fff;
+}
+</style>
+<body>
+<div class="main">
+      <div class="navbar">
+          <div class="icon2">
+              <h2 class="logo2">Predicto</h2>
+          </div>
+
+          <div class="menu">
+              <ul>
+                  <li><a href="index.php">HOME</a></li>
+                  <li><a href="#">SERVICE</a></li>
+                  <li><a href="SalaryPrediction.php">Direct Predict</a></li>
+                  <li><a href="job_offer.php">Job Offer</a></li>
+                  <li><a href="contact.php">CONTACT</a></li>
+                  <li>
+                    <?php  
+                              
+                              if(isset($_SESSION['email']))
+                              {
+                                  echo "<a class='btn4' href='logout.php'>LogOut</a>";
+                              }
+                              else
+                              {
+                                  echo  "<a class='btn4' href='login.php'>Log in</a>";
+                              }
+                          ?>
+                    </li>                        
+              </ul>
+          </div>
 
 <div class="login-form col-md-9 col-sm-12">
     <div class="">
@@ -446,4 +586,8 @@
     });
 
 </script>
+</div>
+</div>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
 </html> 

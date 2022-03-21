@@ -28,11 +28,10 @@
             <div class="menu">
                 <ul>
                     <li><a href="index.php">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="languages.php">SERVICE</a></li>
                     <li><a href="SalaryPrediction.php">DirectPredict</a></li>
                     <li><a href="job_offer.php">Job_Offer</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="contact.php">CONTACT</a></li>
                     
                     <li>
                     <?php  

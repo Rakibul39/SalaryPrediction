@@ -8,19 +8,24 @@
     
     
 }
-.btn{
-    width: 100px;
-    height: 40px;
-    background: #00ccff;
-    border: 2px solid #00ccff;
-    margin-top: 13px;
-    margin-left: 300px;
-    color: #fff;
-    font-size: 18px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    transition: 0.2s ease;
-    cursor: pointer;
+.btn {
+  padding: 0.6rem 1.3rem;
+  background-color: #fff;
+  border: 2px solid #fafafa;
+  font-size: 0.95rem;
+  color: #1abc9c;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0;
+  margin-left:380px;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #fff;
 }
 
 .menu{

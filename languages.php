@@ -18,6 +18,14 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 <style>
+    .main22{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.546)), url(2.png);
+    background-position: center;
+    background-size: cover;
+    height: 110vh;
+    overflow:hidden;
+}
 .container00{
     width: 1150px;
     height: 80vh;
@@ -127,6 +135,30 @@
     color: #000;
     font-weight: bold;
 }
+.menu2{
+    width: 1200px;
+    float: left;
+    height: 70px;
+    margin-left:100px;
+}
+.btn4 {
+  padding: 0.6rem 1.3rem;
+  background-color: #fff;
+  border: 2px solid #fafafa;
+  font-size: 0.95rem;
+  color: #1abc9c;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 380px;;
+}
+
+.btn4:hover {
+  background-color: transparent;
+  color: #fff;
+}
 </style>
 <head>
     <title>Languages</title>
@@ -146,21 +178,32 @@
 
     ?>
 
-    <div class="main">
+    <div class="main22">
         <div class="navbar">
             <div class="icon">
                 <h2 class="logo">Predicto</h2>
             </div>
 
-            <div class="menu">
+            <div class="menu2">
                 <ul>
                     <li><a href="index.php">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a>
-                        
-                    </li>
-                    <li><a href="#">DESIGN</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="language.php">SERVICE</a></li>
+                    <li><a href="SalaryPrediction.php">DirectPredict</a></li>
+                    <li><a href="job_offer.php">Job_Offer</a></li>                    
+                    <li><a href="contact.php">CONTACT</a></li>
+                    <li>
+                    <?php  
+                              
+                              if(isset($_SESSION['email']))
+                              {
+                                  echo "<a class='btn4' href='logout.php'>LogOut</a>";
+                              }
+                              else
+                              {
+                                  echo  "<a class='btn4' href='login.php'>Log in</a>";
+                              }
+                          ?>
+                    </li>     
                 </ul>
             </div>
 

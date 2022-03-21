@@ -1,4 +1,6 @@
 <!Doctype HTML>
+<?php include('../database/db.php'); ?>
+
 	<html>
 	<head>
 		<title></title>
@@ -32,16 +34,16 @@
 			<a href="dart_question.php">Dart</a>
 		</div>
 	  </div>
-	  <a href="#"class="icon-a"><i class="fa fa-users icons"></i>   Users</a>
+	  <a href="user_info.php"class="icon-a"><i class="fa fa-users icons"></i>   Users</a>
 
 	  <div class="dropdown">
 	  	<a href="#"class="icon-a"><i class="fa fa-user icons"></i>   Job Offer</a>
 	  	<div class="dropdown-content">
 			<a href="post_job.php">Post Job</a>
-			<a href="#">Job Edit</a>
-			<a href="#">Job Delete</a>
+			<a href="job_edit.php">Job Edit</a>
 		</div>
 	  </div>
+	  <a href="feedback.php"class="icon-a"><i class="fa fa-envelope"></i>   Feedback</a>
 
 	</div>
 	<div id="main">
@@ -67,8 +69,15 @@
 		<br/>
 		
 		<div class="col-div-3">
+			<?php 
+			$sql11 = " SELECT * FROM user_info ";
+
+			$res11 = mysqli_query($con, $sql11);
+
+			$count11 = mysqli_num_rows($res11); 
+			?>
 			<div class="box">
-				<p>67<br/><span>Customers</span></p>
+				<p><?php  echo $count11?><br/><span>Customers</span></p>
 				<i class="fa fa-users box-icon"></i>
 			</div>
 		</div>
@@ -76,12 +85,6 @@
 			<div class="box">
 				<p>88<br/><span>Projects</span></p>
 				<i class="fa fa-list box-icon"></i>
-			</div>
-		</div>
-		<div class="col-div-3">
-			<div class="box">
-				<p>99<br/><span>Orders</span></p>
-				<i class="fa fa-shopping-bag box-icon"></i>
 			</div>
 		</div>
 		<div class="col-div-3">
@@ -95,33 +98,69 @@
 		<div class="col-div-8">
 			<div class="box-8">
 			<div class="content-box">
-				<p>Top Users <span>Sell All</span></p>
+				<p>Top Users </p>
 				<br/>
 				<table>
 					<tr>
 						<th>Name</th>
 						<th>Phone No.</th>
-						<th>Salary</th>
+						<th>User Name</th>
 					</tr>
 					<tr>
-						<td>Alfreds Futterkiste</td>
-						<td>Maria Anders</td>
-						<td>Germany</td>
+					<?php
+                    $sql = "SELECT * FROM user_info WHERE Id=1";
+                    $res = mysqli_query($con,$sql);
+                    $qu = mysqli_fetch_array($res);
+                    $qu1 = $qu['fullname'];
+					$qu2 = $qu['phone_no'];
+					$qu3 = $qu['username'];
+
+                ?>
+						<td><?php echo $qu1; ?></td>
+						<td><?php echo $qu2; ?></td>
+						<td><?php echo $qu3; ?></td>
 					</tr>
 					<tr>
-						<td>Centro comercial Moctezuma</td>
-						<td>Francisco Chang</td>
-						<td>Mexico</td>
+					<?php
+                    $sql2 = "SELECT * FROM user_info WHERE Id=26";
+                    $res3 = mysqli_query($con,$sql2);
+                    $cu = mysqli_fetch_array($res3);
+                    $cu1 = $cu['fullname'];
+					$cu2 = $cu['phone_no'];
+					$cu3 = $cu['username'];
+
+                ?>
+						<td><?php echo $cu1; ?></td>
+						<td><?php echo $cu2; ?></td>
+						<td><?php echo $cu3; ?></td>
 					</tr>
 					<tr>
-						<td>Ernst Handel</td>
-						<td>Roland Mendel</td>
-						<td>Austria</td>
+					<?php
+                    $sql3 = "SELECT * FROM user_info WHERE Id=27";
+                    $res1 = mysqli_query($con,$sql3);
+                    $au = mysqli_fetch_array($res1);
+                    $au1 = $au['fullname'];
+					$au2 = $au['phone_no'];
+					$au3 = $au['username'];
+
+                ?>
+						<td><?php echo $au1; ?></td>
+						<td><?php echo $au2; ?></td>
+						<td><?php echo $au3; ?></td>
 					</tr>
 					<tr>
-						<td>Island Trading</td>
-						<td>Helen Bennett</td>
-						<td>UK</td>
+					<?php
+                    $sql4 = "SELECT * FROM user_info WHERE Id=28";
+                    $res2 = mysqli_query($con,$sql4);
+                    $bu = mysqli_fetch_array($res2);
+                    $bu1 = $bu['fullname'];
+					$bu2 = $bu['phone_no'];
+					$bu3 = $bu['username'];
+
+                ?>
+						<td><?php echo $bu1; ?></td>
+						<td><?php echo $bu2; ?></td>
+						<td><?php echo $bu3; ?></td>
 					</tr>
 	  
 	  

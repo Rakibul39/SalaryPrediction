@@ -11,6 +11,33 @@
         header('location:'.SITEURL.'login.php');
     }
 ?>
+<style>
+.menu{
+    width: 1200px;
+    float: left;
+    height: 70px;
+    margin-left:100px;
+}
+
+.btn4 {
+  padding: 0.6rem 1.3rem;
+  background-color: #fff;
+  border: 2px solid #fafafa;
+  font-size: 0.95rem;
+  color: #1abc9c;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 380px;
+}
+
+.btn4:hover {
+  background-color: transparent;
+  color: #fff;
+}
+</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,11 +63,24 @@
 
             <div class="menu">
                 <ul>
-                    <li><a href="index.php">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
+                <li><a href="index.php">HOME</a></li>
                     <li><a href="languages.php">SERVICE</a></li>
-                    <li><a href="#">DESIGN</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="SalaryPrediction.php">DirectPredict</a></li>
+                    <li><a href="job_offer.php">Job_Offer</a></li>
+                    <li><a href="contact.php">CONTACT</a></li>
+                    <li>
+                    <?php  
+                              
+                              if(isset($_SESSION['email']))
+                              {
+                                  echo "<a class='btn4' href='logout.php'>LogOut</a>";
+                              }
+                              else
+                              {
+                                  echo  "<a class='btn4' href='login.php'>Log in</a>";
+                              }
+                          ?>
+                    </li>  
                 </ul>
             </div>
 
