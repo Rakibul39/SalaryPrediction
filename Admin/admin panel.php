@@ -1,6 +1,17 @@
-<!Doctype HTML>
 <?php include('../database/db.php'); ?>
-
+<?php 
+    //AUthorization - Access COntrol
+    //CHeck whether the user is logged in or not
+    if(!isset($_SESSION['username'])) //IF user session is not set
+    {
+        //User is not logged in
+        //Redirect to login page with message
+        $_SESSION['no-login-message'] = "<div class='error text-center'>Please login to Use the service.</div>";
+        //Redirect to Login Page
+		echo"<script> window.open('admin_login.php','_self')</script>";
+        //header('location:'.SITEURL.'admin_login.php');
+    }
+?>
 	<html>
 	<head>
 		<title></title>
@@ -83,13 +94,7 @@
 		</div>
 		<div class="col-div-3">
 			<div class="box">
-				<p>88<br/><span>Projects</span></p>
-				<i class="fa fa-list box-icon"></i>
-			</div>
-		</div>
-		<div class="col-div-3">
-			<div class="box">
-				<p>78<br/><span>Tasks</span></p>
+				<p>48<br/><span>Tasks</span></p>
 				<i class="fa fa-tasks box-icon"></i>
 			</div>
 		</div>

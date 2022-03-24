@@ -37,8 +37,15 @@
                         <a href="dart_question.php">Dart</a>
                     </div>
 	        </div>
-	            <a href="#"class="icon-a"><i class="fa fa-users icons"></i>   Users</a>
-	            <a href="#"class="icon-a"><i class="fa fa-user icons"></i>   Acount</a>
+	            <a href="user_info.php" class="icon-a"><i class="fa fa-users icons"></i>   Users</a>
+	            <div class="dropdown">
+					<a href="#"class="icon-a"><i class="fa fa-user icons"></i>   Job Offer</a>
+					<div class="dropdown-content">
+						<a href="post_job.php">Post Job</a>
+						<a href="job_edit.php">Job Edit</a>
+					</div>
+				</div>
+				<a href="feedback.php"class="icon-a"><i class="fa fa-envelope"></i>   Feedback</a>
 
 	    </div>
 	        <div id="main">

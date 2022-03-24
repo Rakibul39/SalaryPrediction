@@ -61,7 +61,8 @@ h2{
     padding: 25px;
     left: 160px;
     top: 140px;
-    margin-top:40px;
+    margin-top:80px;
+    padding-top: 20px;
 }
 .input_field{
     background: transparent;
@@ -109,7 +110,7 @@ h2{
   cursor: pointer;
   transition: 0.3s;
   margin-top:25px;
-  margin-left: 320px;;
+  margin-left: 0px;
 }
 
 .btn4:hover {
@@ -126,8 +127,9 @@ h2{
                                                 $count = mysqli_num_rows($res);
                                     
                                                 if($count>0){
-                                                  //category available
+                                                    //comment
                                                   while($rows = mysqli_fetch_assoc($res)){
+                                                    //while($rows = mysqli_result($res)){
                                                     $id = $rows['id'];
                                                     $title = $rows['title'];
                                                     $body = $rows['details'];
@@ -169,11 +171,11 @@ h2{
                                                             $res = mysqli_query($con, $sql2);
                                                 
                                                             //$res = mysqli_query($con, $sql2) or die(mysqli_error());
-                                                            echo "Apply successful";
+                                                            //echo "Apply successful";
                                                             //echo"<script>alert('Apply successfull')</script>";
                                                             echo "<script>Swal.fire('Apply successfull')</script>";
 
-                                                            echo"<script> window.open('job_offer.php','_self')</script>";
+                                                            //echo"<script> window.open('job_offer.php','_self')</script>";
 
                                                 
                                                             //Check whether data is inserted or not
@@ -197,8 +199,11 @@ h2{
             <div class="box-8">
                 <div class="content-box">
                     <p>Job Offer:  <span><?php echo $id; ?> </span></p>
-                    <h2>Job Type: <span><?php echo $title; ?> </span></h2>
-                    <input class = "input_field" style = "width:400px;height:200px" name="questions" value="<?php echo $body; ?>"></input>
+                    <h2>Job Title: <span><?php echo $title; ?> </span></h2>
+                    <div class = "input_field">
+                    <a name="questions"> <?php echo $body; ?></a>
+
+                    </div>
                     <button  class = "btn4" name="submit" type="submit">Apply</button>
                 </div>
             </div>
